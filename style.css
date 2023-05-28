@@ -1,126 +1,90 @@
 body{
-    font-size: 15px;
-    background-color: hsl(0, 0%, 95%);
+    margin: 0;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
 }
-.container{
-    width: 100%;
+.main{
+    display: grid;
     height: 95vh;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr;
+}
+.table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.first-table{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    align-items: flex-start;
+     flex-direction: column;
+    grid-column-start: 2;
+    grid-row: 2 / span 4;
+    gap: 25px;
+    background-color: #E28625;
+    padding: 0 0 0 15%;
+    border-radius: 8px 0 0 8px;
 }
-.left{
-    height: 500px;
-    width: 307px;
+.second-table{
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: left;
-    background-color: hsl(31, 77%, 52%);
-    border-radius: 10px 0 0 10px;
+    grid-column-start: 3;
+    grid-row: 2 / span 4;
+    gap: 25px;
+    background-color: #006971;
+    padding: 0 0 0 15%;
+    
 }
-.middle{
-    height: 500px;
-    width: 307px;
+.third-table{
     display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: flex-start;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: left;
-    background-color: hsl(184, 100%, 22%);
+    grid-column-start: 4;
+    grid-row: 2 / span 4;
+    background-color: #004140;
+    padding: 0 0 0 15%;
+    border-radius: 0 8px 8px 0;
 }
-.right{
-    height: 500px;
-    width: 307px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: left;
-    background-color: hsl(179, 100%, 13%);
-    border-radius: 0 10px 10px 0;
+.icon{
+    transform: translateX(-10px) scale(0.9);
 }
 .title{
-    margin-left: 40px;
     font-size: 40px;
     font-family: 'Big Shoulders Display', cursive;
-    color: white;
     font-weight: 700;
 }
 .text{
-    line-height: 1.7;
-    margin-left: 40px;
-    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
     font-weight: 200;
-    color: white;
-    width: 65%;
-    margin-bottom: 60px;
-}
-.left-text{
     line-height: 1.7;
-    margin-left: 40px;
-    font-family: 'Lexend Deca', sans-serif;
+    width: 77%;
+}
+.text-1{
+    font-size: 15px;
     font-weight: 200;
-    color: white;
-    width: 63%;
-    margin-bottom: 60px;
+    line-height: 1.7;
+    width: 75%;
 }
-.image{
-    margin-left: 40px;
-    margin-top: 20px;
-}
-.left-learn{
-    font-family: 'Lexend Deca', sans-serif;
-    color: hsl(31, 77%, 52%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 40px; 
-    padding: 4% 6%;
-    border-radius: 20px;
+.learn{
+    margin-top: 20%;
+    padding: 5% 10%;
     background-color: white;
-    width: 30%;
-    margin-bottom: 20px;
-    border: solid white 2px;
+    border-radius: 25px;
+    font-size: 15px;
 }
-.left-learn:hover{
-    background-color: hsl(31, 77%, 52%);
-    color: white;
+.one{
+    color: #E28625;
 }
-.middle-learn{
-    font-family: 'Lexend Deca', sans-serif;
-    color: hsl(184, 100%, 22%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 40px; 
-    padding: 4% 6%;
-    border-radius: 20px;
-    background-color: white;
-    width: 30%;
-    margin-bottom: 20px;
-    border: solid white 2px;
+.two{
+    color: #006971;
 }
-.middle-learn:hover{
-    background-color: hsl(184, 100%, 22%);
-    color: white;
-}
-.right-learn{
-    font-family: 'Lexend Deca', sans-serif;
-    color: hsl(179, 100%, 13%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 40px; 
-    padding: 4% 6%;
-    border-radius: 20px;
-    background-color: white;
-    width: 30%;
-    margin-bottom: 20px;
-    border: solid white 2px;
-}
-.right-learn:hover{
-    background-color: hsl(179, 100%, 13%);
-    color: white;
+.three{
+    color: #004140;
 }
 .footer{
     position: fixed;
@@ -128,10 +92,12 @@ body{
     left: 49%;
     transform: translateX(-50%);
     font-size: 18px;
+    color: black;
 }
 a{
    text-decoration: none;
+   color: #006971;
 }
 a:hover{
-    color: hsl(179, 100%, 13%);
+    color: #E28625;
 }
