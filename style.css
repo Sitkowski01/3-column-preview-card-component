@@ -78,13 +78,28 @@ body{
     font-size: 15px;
 }
 .one{
+    border: solid white 2px;
     color: #E28625;
 }
 .two{
+    border: solid white 2px;
     color: #006971;
 }
 .three{
+    border: solid white 2px;
     color: #004140;
+}
+.one:hover{
+    color: white;
+    background-color: #E28625;
+}
+.two:hover{
+    color: white;
+    background-color: #006971;
+}
+.three:hover{
+    color: white;
+    background-color: #004140;
 }
 .footer{
     position: fixed;
